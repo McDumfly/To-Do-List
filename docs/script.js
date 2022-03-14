@@ -98,7 +98,6 @@ if (loadedTDData != null) {
 
 
 let lastSec = gebi("showAllTd");
-lastSec.classList.add("active");
 
 const td = {
     create: (text, completed) => {
@@ -138,9 +137,7 @@ const td = {
     
     showActive: (box) => {
         lastSec.classList.remove("active");
-        console.log(lastSec);
         lastSec = box;
-        console.log(lastSec);
         lastSec.classList.add("active");
         let actives = [];
         for (let i = 0; i < data.length; i++) {
