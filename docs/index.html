@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="top">
+        <span>T O D O</span>    
+    </div>
+    <div class="new-todo">
+        <div class="todocl">
+            <input type="text" id="newTodo" onchange="td.create(this.value, document.getElementById('newTodoChecked').checked)" placeholder="Write new To-Do...">
+            <label class="control control-checkbox">
+                <input type="checkbox" id="newTodoChecked">
+                <div class="control_indicator"></div>
+            </label>
+        </div>
+    </div>
+    <div id="todos"></div>
+</body>
+<script src="script.js"></script>
+</html>
